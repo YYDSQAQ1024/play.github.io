@@ -1,1 +1,80 @@
-<h1>hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+body
+            {
+	            background-image:url('/static/ice.jpg');
+
+            }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+out {
+    float: right;
+}
+
+out a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+out a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">主页</a></li>
+  <li><a href="/new">新闻</a></li>
+  <li><a href="/bbs">论坛</a></li>
+  <li><a href="/films">电影</a></li>
+    <li><a href="/about">关于</a></li>
+    <out><a href="/user">{{user}}</a></out>
+</ul>
+<div id="content" style="background-color:#EEEEEE;height:800px;width:100%;float:left;">
+    <h3>欢迎访问15C！</h3>
+</div>
+<div id="footer" style="background-color:#333;clear:both;height:100px;text-align:center;">
+
+
+            <a href="https://www.mcbbs.net" target="_blank"><font color="white"> 友情链接：mcbbs</font></a><br>
+            <br>
+            <font color="white"> © 15C 版权所有 未经允许 禁止转载！</font><br>
+
+        </div>
+</body>
+</html>
